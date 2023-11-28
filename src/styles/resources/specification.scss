@@ -1,0 +1,76 @@
+/* ---- Specification ---- */
+* {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background-color: $bg;
+  color: $text;
+  font-family: var(--main-font-family), sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include tablet {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+  @include desktop {
+    padding: 0 20px;
+    max-width: 1280px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 95vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+h1,
+h2 {
+  font-family: var(--secondary-font-family), sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  @include titleH1;
+}
+
+h2 {
+  @include titleH2;
+}

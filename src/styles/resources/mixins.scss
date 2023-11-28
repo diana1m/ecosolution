@@ -1,0 +1,81 @@
+/* ---- Mixins ---- */
+/* -- UI -- */
+@mixin border($color) {
+  border: 1px solid $color;
+}
+
+/* -- Usefull -- */
+@mixin transition($property: all) {
+  transition: $property $transition-duration $transition-timing-function;
+}
+
+@mixin font($fW, $fS) {
+  font-weight: $fW;
+  font-size: $fS;
+}
+
+@mixin flex($fd, $jc, $ai) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin titleH1 {
+  font-size: 36px;
+
+  @include tablet {
+    font-size: 48px;
+  }
+
+  @include desktop {
+    font-size: 64px;
+  }
+}
+
+@mixin titleH2 {
+  font-size: 28px;
+
+  @include tablet {
+    font-size: 36px;
+  }
+
+  @include desktop {
+    font-size: 48px;
+  }
+}
+
+/* -- Media Query -- */
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}

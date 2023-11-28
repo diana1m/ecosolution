@@ -1,0 +1,20 @@
+/* ---- Animations ---- */
+
+@keyframes burgerAnimation {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes cartAnimation {
+  0% {
+    margin-right: -100%;
+  }
+
+  100% {
+    margin-right: 0;
+  }
+}
