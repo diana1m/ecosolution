@@ -1,0 +1,18 @@
+/* ---- SocialMedia ---- */
+@import '/src/styles/resources/';
+
+.wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  width: 29px;
+  height: 29px;
+  color: inherit;
+  @include transition;
+
+  &:hover {
+    color: $accent;
+  }
+}
