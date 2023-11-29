@@ -1,19 +1,8 @@
 import type { Metadata } from 'next'
-import { Fira_Sans, Oswald } from 'next/font/google'
 import '../styles/globals.scss'
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
-
-const fira = Fira_Sans({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--main-font-family',
-})
-const oswald = Oswald({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--secondary-font-family',
-})
+import { firaFont } from './fonts'
 
 export const metadata: Metadata = {
   title: 'Ecosolution',
@@ -27,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={fira.className}>
+      <body className={firaFont.className}>
         <div className='container'>
           <Header />
           {children}
