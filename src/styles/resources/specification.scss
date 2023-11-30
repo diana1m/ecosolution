@@ -64,6 +64,12 @@ button {
   font-size: inherit;
 }
 
+p,
+a,
+address {
+  letter-spacing: -0.64px;
+}
+
 h1,
 h2 {
   font-family: var(--secondary-font-family);

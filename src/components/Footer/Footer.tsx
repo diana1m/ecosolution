@@ -28,7 +28,9 @@ const Footer = () => {
       <address className={styles.text}>
         79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
       </address>
-      <p className={styles.text}>office@ecosolution.com</p>
+      <Link className={styles.text} href='mailto:office@ecosolution.com'>
+        office@ecosolution.com
+      </Link>
       <p className={styles.text}>ecosolution &copy; 2023</p>
     </footer>
   )

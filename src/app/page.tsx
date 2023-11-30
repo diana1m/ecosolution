@@ -1,9 +1,9 @@
-import { oswaldFont } from './fonts'
+import Hero from '@/components/Hero/Hero'
 
 export default function Home() {
   return (
     <main className='main'>
-      <h1 className={oswaldFont.className}>RENEWABLE ENERGY For any task</h1>
+      <Hero />
     </main>
   )
 }

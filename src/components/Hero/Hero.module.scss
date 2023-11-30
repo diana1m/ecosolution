@@ -1,0 +1,122 @@
+/* ---- Hero ---- */
+@import '/src/styles/resources/';
+
+.section {
+  margin-top: 222px;
+  width: 100%;
+
+  @include tablet {
+    margin-top: 240px;
+  }
+
+  @include desktop {
+    margin-top: 264px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  @include tablet {
+    gap: 0;
+    flex-direction: row;
+  }
+}
+
+.title {
+  @include tablet {
+    width: 300px;
+  }
+  @include desktop {
+    width: 485px;
+  }
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include tablet {
+    gap: 0;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex: 0 0 50%;
+  }
+
+  @include desktop {
+    padding: 15px 0;
+  }
+
+  & p {
+    @include desktop {
+      width: 363px;
+    }
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  height: 39px;
+  padding: 4px 4px 4px 16px;
+  gap: 12px;
+  border-radius: 500px;
+  @include border($accent);
+  @include transition;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: $text;
+    color: $accent;
+    border-color: $text;
+  }
+}
+
+.arrowWrapper {
+  @include center-element;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: $accent;
+
+  color: $text;
+}
+
+.contact {
+  width: 100%;
+  border-top: 1px solid $accent;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 16px;
+    text-align: left;
+  }
+
+  @include desktop {
+    padding-top: 12px;
+  }
+}
+
+.copyright {
+  display: none;
+
+  @include tablet {
+    display: inline;
+    text-align: right;
+  }
+}
