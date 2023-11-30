@@ -1,0 +1,76 @@
+/* ---- Footer ---- */
+@import '/src/styles/resources/';
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 2fr 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+
+  @include tablet {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: left;
+    gap: 0;
+  }
+
+  & .gridItem:first-child {
+    order: -2;
+
+    @include tablet {
+      order: 0;
+    }
+  }
+
+  & .gridItem:nth-child(2) {
+    grid-column: span 2;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+      grid-column: auto;
+      margin: 0;
+    }
+  }
+}
+
+.popUp {
+  order: -1;
+  background-color: $accent;
+  color: $text;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  border-radius: 50%;
+  @include center-element;
+  @include transition;
+  cursor: pointer;
+
+  @include tablet {
+    order: 0;
+  }
+
+  &:hover {
+    background-color: $text;
+    color: $accent;
+  }
+}
+
+.text {
+  grid-column: span 2;
+  letter-spacing: -0.64px;
+
+  @include tablet {
+    grid-column: auto;
+  }
+
+  &:last-child {
+    text-align: center;
+    @include tablet {
+      text-align: right;
+    }
+  }
+}
