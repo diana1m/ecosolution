@@ -1,2 +1,7 @@
 export { default as FacebookIcon } from './socialMedia/facebook.svg'
 export { default as InstagramIcon } from './socialMedia/instagram.svg'
+export { default as MenuIcon } from './menu.svg'
+export { default as CloseIcon } from './close.svg'
+export { default as ArrowRightTop } from './arrow-right-top.svg'
+export { default as ArrowRight } from './arrow-right.svg'
+export { default as ArrowTop } from './arrow-top.svg'

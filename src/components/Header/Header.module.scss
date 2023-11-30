@@ -1,0 +1,52 @@
+/* ---- Header ---- */
+@import '/src/styles/resources/';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+
+  @include desktop {
+    padding-top: 24px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.getInTouch {
+  padding: 10px 16px;
+  height: 40px;
+  border-radius: 500px;
+  background-color: $accent;
+  @include transition;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  &:hover {
+    background-color: $text;
+    color: $accent;
+  }
+  &:hover .circle {
+    background-color: $accent;
+  }
+}
+
+.circle {
+  background-color: $text;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  @include transition;
+  color: $text;
+  @include center-element;
+
+  & svg {
+    width: 10px;
+    height: 10px;
+    transform: rotate(180deg);
+  }
+}

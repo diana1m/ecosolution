@@ -1,0 +1,20 @@
+/* ---- Burger ---- */
+@import '/src/styles/resources/';
+
+.burgerBtn {
+  background-color: #dcefd8;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  @include center-element;
+  @include transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent;
+  }
+
+  & svg {
+    color: #292d32;
+  }
+}
