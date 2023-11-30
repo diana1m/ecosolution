@@ -17,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={firaFont.className}>
+        <Header />
         <div className='container'>
-          <Header />
           {children}
           <Footer />
         </div>

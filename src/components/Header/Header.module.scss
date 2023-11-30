@@ -2,29 +2,46 @@
 @import '/src/styles/resources/';
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 36px;
+  padding: 36px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  @include transition;
 
   @include desktop {
-    padding-top: 24px;
+    padding: 24px 0;
   }
 }
 
+.scrolled {
+  background-color: #ffffff;
+}
+
 .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapperBtn {
   display: flex;
   gap: 12px;
 }
 
 .getInTouch {
+  display: none;
   padding: 10px 16px;
   height: 40px;
   border-radius: 500px;
   background-color: $accent;
+  cursor: pointer;
   @include transition;
-  display: flex;
-  gap: 12px;
-  align-items: center;
+
+  @include tablet {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
 
   &:hover {
     background-color: $text;
