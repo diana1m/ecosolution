@@ -4,8 +4,12 @@
 .section {
   margin-bottom: 36px;
 
-  @include desktop {
+  @include tablet{
     margin-bottom: 100px;
+  }
+
+  @include desktop {
+    margin-bottom: 120px;
   }
 }
 

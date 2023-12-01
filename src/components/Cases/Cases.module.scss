@@ -1,2 +1,14 @@
 /* ---- Cases ---- */
 @import '/src/styles/resources/';
+
+.section {
+  margin-bottom: 36px;
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
+
+  @include desktop {
+    margin-bottom: 120px;
+  }
+}
