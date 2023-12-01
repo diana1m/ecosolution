@@ -71,7 +71,8 @@ address {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--secondary-font-family);
   text-transform: uppercase;
 }
@@ -82,4 +83,8 @@ h1 {
 
 h2 {
   @include titleH2;
+}
+
+h3 {
+  @include titleH3;
 }

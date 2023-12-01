@@ -1,2 +1,126 @@
 /* ---- About ---- */
 @import '/src/styles/resources/';
+
+.section {
+  margin-bottom: 36px;
+  width: 100%;
+
+  @include desktop {
+    margin-bottom: 100px;
+  }
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 50px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  @include desktop {
+    margin-bottom: 125px;
+  }
+
+  & p {
+    text-align: justify;
+
+    @include tablet {
+      flex: 0 0 50%;
+      padding-left: 11px;
+      margin: 10px 0;
+      border-left: 1px solid $accent;
+    }
+
+    @include desktop {
+      margin: 12px 0;
+      padding-left: 160px;
+    }
+  }
+}
+
+.title {
+  text-align: left;
+
+  @include tablet {
+    width: 272px;
+  }
+
+  @include desktop {
+    width: 365px;
+  }
+}
+
+.cardWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @include desktop {
+    gap: 48px;
+  }
+}
+
+.card {
+  background-color: $card-bg;
+  padding: 12px;
+
+  @include desktop {
+    padding: 48px 24px;
+  }
+}
+
+.cardTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid $accent;
+
+  @include tablet {
+    padding-bottom: 51px;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+    padding-bottom: 94px;
+  }
+
+  & p {
+    text-align: justify;
+  }
+}
+
+.cardImage1,
+.cardImage2 {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    height: 339px;
+    width: auto;
+  }
+}
+
+.cardImage1 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.cardImage2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
