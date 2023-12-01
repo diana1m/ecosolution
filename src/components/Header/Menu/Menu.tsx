@@ -30,6 +30,7 @@ const Menu: FC<MenuProps> = ({ onClose, isOpen }) => {
           <nav className={styles.navigation}>
             {data.map((item) => (
               <ScrollLink
+                key={item.text}
                 to={item.href}
                 smooth={true}
                 offset={-100}
