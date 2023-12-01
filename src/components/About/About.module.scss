@@ -3,7 +3,6 @@
 
 .section {
   margin-bottom: 36px;
-  width: 100%;
 
   @include desktop {
     margin-bottom: 100px;
@@ -77,6 +76,12 @@
   @include desktop {
     padding: 48px 24px;
   }
+
+  & p {
+    text-align: justify;
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
 }
 
 .cardTitleWrapper {
@@ -96,8 +101,12 @@
     padding-bottom: 94px;
   }
 
-  & p {
-    text-align: justify;
+  & svg {
+    flex: 0 0 16px;
+    @include desktop {
+      flex: 0 0 24px;
+      height: 24px;
+    }
   }
 }
 
@@ -107,6 +116,7 @@
 
   @include tablet {
     display: block;
+    height: auto;
   }
 
   @include desktop {
