@@ -32,8 +32,8 @@ const Menu: FC<MenuProps> = ({ onClose, isOpen }) => {
               <ScrollLink
                 to={item.href}
                 smooth={true}
-                offset={-70}
-                duration={500}
+                offset={-100}
+                duration={600}
                 onClick={onClose}
                 className={styles.navLink}
               >

@@ -1,4 +1,5 @@
-// import { Link } from 'react-scroll'
+'use client'
+import { Link as ScrollLink } from 'react-scroll'
 import Link from 'next/link'
 import { oswaldFont } from '../../app/fonts'
 import styles from './Hero.module.scss'
@@ -17,19 +18,18 @@ const Hero = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </p>
-          <Link
+          <ScrollLink
             className={styles.link}
-            href='#cases'
-            //   to='cases'
-            //   smooth={true}
-            //   offset={-70}
-            //   duration={500}
+            to='cases'
+            smooth={true}
+            offset={-70}
+            duration={700}
           >
             Learn more
             <div className={styles.arrowWrapper}>
               <ArrowRight />
             </div>
-          </Link>
+          </ScrollLink>
         </div>
       </div>
 

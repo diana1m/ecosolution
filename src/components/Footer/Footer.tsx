@@ -1,4 +1,5 @@
-// import { Link } from 'react-scroll'
+'use client'
+import { Link as ScrollLink } from 'react-scroll'
 import Link from 'next/link'
 import styles from './Footer.module.scss'
 import { ArrowTop } from '@/components/svgs'
@@ -14,16 +15,15 @@ const Footer = () => {
       <div className={styles.gridItem}>
         <SocialMedia />
       </div>
-      <Link
+      <ScrollLink
         className={styles.popUp}
-        href='#main'
-        //   to='main'
-        //   smooth={true}
-        //   offset={-70}
-        //   duration={500}
+        to='main'
+        smooth={true}
+        offset={-120}
+        duration={800}
       >
         <ArrowTop />
-      </Link>
+      </ScrollLink>
 
       <address className={styles.text}>
         79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
