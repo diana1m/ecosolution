@@ -42,6 +42,35 @@ const Hero = () => {
         </Link>
         <p className={styles.copyright}>ecosolution &copy; 2023</p>
       </div>
+      <picture className={styles.picture}>
+        <source
+          media='(max-width: 767px)'
+          srcSet='/Hero/wind-turbine-clean-energy-sm.jpg'
+          type='image/jpg'
+          height='200px'
+          width='100%'
+        />
+        <source
+          media='(min-width: 768px and max-width: 1279px)'
+          srcSet='/Hero/wind-turbine-clean-energy-md.jpg'
+          type='image/jpg'
+          height='348px'
+          width='100%'
+        />
+        <source
+          media='(min-width: 1280px)'
+          srcSet='/Hero/wind-turbine-clean-energy-lg.jpg'
+          type='image/jpg'
+          height='524px'
+          width='100%'
+        />
+        <img
+          src='/Hero/wind-turbine-clean-energy-lg.jpg'
+          alt='wind-turbine'
+          width='100%'
+          height='auto'
+        />
+      </picture>
     </section>
   )
 }

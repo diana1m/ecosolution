@@ -3,6 +3,7 @@
 
 .section {
   margin-top: 222px;
+  margin-bottom: 36px;
   width: 100%;
 
   @include tablet {
@@ -11,6 +12,7 @@
 
   @include desktop {
     margin-top: 264px;
+    margin-bottom: 100px;
   }
 }
 
@@ -119,4 +121,9 @@
     display: inline;
     text-align: right;
   }
+}
+
+.picture {
+  margin-top: 36px;
+  display: block;
 }
