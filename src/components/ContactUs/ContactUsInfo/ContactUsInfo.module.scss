@@ -1,0 +1,55 @@
+/* --- ContactUsInfo --- */
+@import '/src/styles/resources/';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+
+  @include tablet {
+    width: 342px;
+  }
+
+  @include desktop {
+    width: 596px;
+    gap: 32px;
+  }
+}
+
+.description {
+  margin-bottom: 8px;
+
+  @include desktop {
+    margin-bottom: 16px;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  letter-spacing: -0.8px;
+
+  @include desktop {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+
+  &:hover {
+    svg {
+      color: $accent;
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    @include transition;
+  }
+}
+
+.phone {
+  margin-bottom: 12px;
+}

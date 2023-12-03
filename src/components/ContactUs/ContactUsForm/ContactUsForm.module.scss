@@ -1,0 +1,100 @@
+/* --- ContactUsForm --- */
+@import '/src/styles/resources/';
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background-color: $card-bg;
+  padding: 36px 12px;
+
+  @include tablet {
+    width: 342px;
+    padding: 36px 24px;
+  }
+
+  @include desktop {
+    padding: 48px;
+    width: 596px;
+  }
+}
+
+.formItem {
+  position: relative;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  border-bottom: 1px solid $accent;
+  background-color: transparent;
+  padding-bottom: 8px;
+  @include transition;
+
+  &::placeholder {
+    color: #bdbdbd;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+
+    @include desktop {
+      font-size: 20px;
+      letter-spacing: -0.8px;
+    }
+  }
+}
+
+.formError {
+  color: #d28b8b;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  text-align: right;
+  font-size: 12px;
+  letter-spacing: -0.48px;
+}
+
+.inputError {
+  border-bottom: 1px solid #d28b8b;
+}
+
+.formTextarea {
+  height: 150px;
+  resize: none;
+}
+
+.formButton {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-left: auto;
+  height: 39px;
+  padding: 4px 4px 4px 16px;
+  gap: 12px;
+  border-radius: 500px;
+  background-color: transparent;
+  @include border($accent);
+  @include transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $text;
+    color: $accent;
+    border-color: $text;
+  }
+}
+
+.arrowWrapper {
+  @include center-element;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: $accent;
+
+  color: $text;
+}
