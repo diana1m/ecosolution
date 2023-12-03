@@ -11,7 +11,7 @@
   padding: 2.5vh 0;
   background-color: rgba(23, 61, 51, 0.25);
   backdrop-filter: blur(2px);
-  z-index: 100;
+  z-index: 1000;
 
   &.open {
     display: block;
@@ -68,12 +68,15 @@
 }
 
 .navLink {
-  cursor: pointer;
-  @include transition;
   width: fit-content;
   padding-right: 10px;
   display: flex;
+  align-items: center;
   gap: 8px;
+  font-size: 24px;
+  letter-spacing: -0.96px;
+  cursor: pointer;
+  @include transition;
 
   &:hover {
     color: $accent;

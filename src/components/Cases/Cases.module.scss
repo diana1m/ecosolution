@@ -3,6 +3,7 @@
 
 .section {
   margin-bottom: 36px;
+  max-width: 100vw;
 
   @include tablet {
     margin-bottom: 100px;
@@ -10,5 +11,194 @@
 
   @include desktop {
     margin-bottom: 120px;
+  }
+}
+
+.headWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+
+  @include tablet {
+    flex-direction: row;
+    margin-bottom: 38px;
+    gap: 0;
+  }
+
+  @include desktop {
+    margin-bottom: 122px;
+  }
+}
+
+.title {
+  width: 100%;
+  width: 264px;
+
+  @include desktop {
+    width: 400px;
+  }
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @include tablet {
+    width: 50%;
+
+    border-left: 1px solid $accent;
+    padding-left: 10px;
+    margin: 10px 0;
+  }
+
+  @include desktop {
+    padding-left: 160px;
+  }
+}
+
+.currentPagination {
+  color: $text;
+}
+
+.buttonWrapper {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  gap: 12px;
+
+  @include desktop {
+    gap: 24px;
+  }
+}
+
+.customPrevButton,
+.customNextButton {
+  position: static;
+  width: 66px;
+  height: 66px;
+  color: $text;
+  @include border($text);
+  border-radius: 50%;
+
+  @include desktop {
+    width: 84px;
+    height: 84px;
+  }
+
+  &::after {
+    content: '';
+  }
+
+  svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.customPrevButton {
+  transform: rotate(180deg);
+}
+.customNextButton {
+}
+
+.card {
+  background-color: $card-bg;
+  max-width: 100%;
+
+  @include tablet {
+    width: 342px;
+  }
+
+  @include desktop {
+    width: 596px;
+  }
+}
+
+.cardImage {
+  width: 100%;
+
+  @include desktop {
+    height: 296px;
+  }
+}
+
+.cardContent {
+  padding: 24px 12px;
+
+  @include desktop {
+    padding: 36px 48px;
+  }
+}
+
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid $accent;
+
+  @include tablet {
+    padding-bottom: 22px;
+  }
+
+  @include desktop {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.cardTitle {
+  width: 175px;
+  font-size: 18px;
+  letter-spacing: -0.72px;
+
+  @include tablet {
+    width: 210px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+  }
+  @include desktop {
+    width: 300px;
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+}
+
+.cardBtn {
+  width: 60px;
+  height: 60px;
+  background-color: $accent;
+  border-radius: 50%;
+  @include center-element;
+  @include transition;
+  z-index: 0;
+
+  &:hover {
+    background-color: $text;
+    color: $accent;
+  }
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  letter-spacing: -0.48px;
+
+  @include tablet {
+    letter-spacing: -0.56px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    letter-spacing: -0.64px;
   }
 }

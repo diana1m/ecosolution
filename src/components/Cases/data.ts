@@ -1,0 +1,42 @@
+export const data = [
+  {
+    id: 1,
+    img: '/Cases/image1-lviv.png',
+    title: 'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”',
+    href: '#',
+    description: 'Wind Power for auto field irrigation',
+    data: 'July 2023',
+  },
+  {
+    id: 2,
+    img: '/Cases/image2-zhytomyr.png',
+    title: 'Zhytomyr city Private Enterprise “Bosch”',
+    href: '#',
+    description: 'Solar Panels for industrial use',
+    data: 'November 2023',
+  },
+  {
+    id: 3,
+    img: '/Cases/image3-rivne.png',
+    title: 'Rivne city Private Enterprise “Biotech”',
+    href: '#',
+    description: 'Thermal modules',
+    data: 'October 2023',
+  },
+  {
+    id: 4,
+    img: '/Cases/image4-kherson.png',
+    title: 'Kherson city Private Enterprise “HealthyFarm”',
+    href: '#',
+    description: 'Wind power',
+    data: 'September 2021',
+  },
+  {
+    id: 5,
+    img: '/Cases/image5-zaporizhia.png',
+    title: 'Zaporizhia city Private Enterprise “Biotech”',
+    href: '#',
+    description: 'Mini nuclear stations',
+    data: 'May 2021',
+  },
+]
