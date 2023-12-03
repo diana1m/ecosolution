@@ -22,7 +22,7 @@ const Hero = () => {
             className={styles.link}
             to='cases'
             smooth={true}
-            offset={-70}
+            offset={-120}
             duration={700}
           >
             Learn more
@@ -35,11 +35,16 @@ const Hero = () => {
 
       <div className={styles.contact}>
         <address className={styles.text}>
-          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+          <Link href='https://maps.app.goo.gl/AyT3DNC4Cco23Xoy7'>
+            79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+          </Link>
         </address>
-        <Link className={styles.text} href='mailto:office@ecosolution.com'>
-          office@ecosolution.com
-        </Link>
+
+        <address className={styles.text}>
+          <Link href='mailto:office@ecosolution.com'>
+            office@ecosolution.com
+          </Link>
+        </address>
         <p className={styles.copyright}>ecosolution &copy; 2023</p>
       </div>
       <picture className={styles.picture}>

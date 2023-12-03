@@ -71,6 +71,7 @@
   border-radius: 500px;
   @include border($accent);
   @include transition;
+  cursor: pointer;
 
   @include tablet {
     margin: 0;

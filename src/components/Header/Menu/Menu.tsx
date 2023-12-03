@@ -33,7 +33,7 @@ const Menu: FC<MenuProps> = ({ onClose, isOpen }) => {
                 key={item.text}
                 to={item.href}
                 smooth={true}
-                offset={-100}
+                offset={-120}
                 duration={600}
                 onClick={onClose}
                 className={styles.navLink}
