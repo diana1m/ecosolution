@@ -4,7 +4,7 @@
 .section {
   margin-bottom: 36px;
 
-  @include tablet{
+  @include tablet {
     margin-bottom: 100px;
   }
 
@@ -59,13 +59,16 @@
   color: $accent;
   font-size: 48px;
   text-transform: uppercase;
+  width: 250px;
 
   @include tablet {
     font-size: 100px;
+    width: 500px;
   }
 
   @include desktop {
     font-size: 164px;
+    width: 865px;
   }
 }
 
