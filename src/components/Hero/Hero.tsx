@@ -35,7 +35,11 @@ const Hero = () => {
 
       <div className={styles.contact}>
         <address className={styles.text}>
-          <Link href='https://maps.app.goo.gl/AyT3DNC4Cco23Xoy7'>
+          <Link
+            href='https://maps.app.goo.gl/AyT3DNC4Cco23Xoy7'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
           </Link>
         </address>

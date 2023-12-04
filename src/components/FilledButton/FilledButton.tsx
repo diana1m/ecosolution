@@ -17,7 +17,7 @@ const FilledButton: FC<PropsButton> = ({ text }) => {
     <Link
       to='contact'
       smooth={true}
-      offset={-70}
+      offset={-120}
       duration={700}
       className={classButton}
     >
