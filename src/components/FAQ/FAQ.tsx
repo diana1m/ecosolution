@@ -17,7 +17,7 @@ const FAQ = () => {
       <h2 className={`${oswaldFont.className} ${styles.title}`}>
         Frequently Asked Questions
       </h2>
-      
+
       <div className={styles.accordionWrapper}>
         <Accordion
           id='Section1'
@@ -55,7 +55,7 @@ const FAQ = () => {
           title='How can businesses and communities benefit from integrating renewable energy solutions from EcoSolution?'
         >
           Businesses and communities gain sustainable advantages by integrating
-          EcoSolution's renewable energy solutions. Our tailored approach
+          EcoSolution&apos;s renewable energy solutions. Our tailored approach
           ensures cost-effective, eco-friendly energy solutions, fostering
           environmental responsibility, reducing long-term operational costs,
           and promoting energy independence for a resilient future.
@@ -89,7 +89,7 @@ const FAQ = () => {
       </div>
 
       <div className={styles.helpWrapper}>
-        <p>Didn't find the answer to your question? </p>
+        <p>Didn&apos;t find the answer to your question? </p>
         <FilledButton text='Contact Us' />
       </div>
     </section>
