@@ -4,15 +4,16 @@ import styles from './Electricity.module.scss'
 import { oswaldFont } from '../../app/fonts'
 
 const Electricity: React.FC = () => {
-  const initialElectricityProduced = parseInt(
-    localStorage.getItem('electricityProduced') || '1134147814',
-    10
-  )
-  const [electricityProduced, setElectricityProduced] = useState<number>(
-    initialElectricityProduced
-  )
+  const [electricityProduced, setElectricityProduced] =
+    useState<number>(1134147814)
 
   useEffect(() => {
+    const initialElectricityProduced = parseInt(
+      localStorage.getItem('electricityProduced') || '1134147814',
+      10
+    )
+    setElectricityProduced(initialElectricityProduced)
+
     const intervalId = setInterval(() => {
       setElectricityProduced((prevCount) => {
         const newCount = prevCount + 1
