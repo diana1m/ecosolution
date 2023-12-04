@@ -31,7 +31,8 @@ const ContactUsInfo = () => {
         <p className={styles.description}>Address:</p>
         <Link
           href='https://maps.app.goo.gl/AyT3DNC4Cco23Xoy7'
-          className={styles.link}
+          className={styles.link} target='_blank'
+          rel='noopener noreferrer'
         >
           <MapIcon />
           <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
