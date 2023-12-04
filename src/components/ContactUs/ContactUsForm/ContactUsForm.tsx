@@ -45,7 +45,7 @@ const ContactUsForm: React.FC = () => {
                 type='text'
                 placeholder='John Rosie'
                 className={`${styles.formInput} ${
-                  errors.phoneNumber ? styles.inputError : ''
+                  errors.fullName ? styles.inputError : ''
                 }`}
               />
               {errors.fullName && (
@@ -78,7 +78,7 @@ const ContactUsForm: React.FC = () => {
                 type='email'
                 placeholder='johnrosie@gmail.com'
                 className={`${styles.formInput} ${
-                  errors.phoneNumber ? styles.inputError : ''
+                  errors.email ? styles.inputError : ''
                 }`}
               />
               {errors.email && (
